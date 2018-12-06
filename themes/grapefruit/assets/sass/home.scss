@@ -50,6 +50,7 @@ header {
 .hero__text {
   font-weight: bolder;
   text-align: center;
+  display: flex;
   font-size: 18pt;
   color: $white;
 }

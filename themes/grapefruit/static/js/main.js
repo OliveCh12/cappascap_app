@@ -1,14 +1,12 @@
-import Typewriter from 'typewriter';
-
 // Type Writer Script
 
-var app = document.getElementById('app');
+var app = document.getElementById('typewriter');
 
 var typewriter = new Typewriter(app, {
     loop: true
 });
 
-typewriter.typeString('Hello World!')
+typewriter.typeString('qui te fait matcher avec le travail adapté à ton handicap en 24h.')
     .pauseFor(2500)
     .deleteAll()
     .typeString('Strings can be removed')
