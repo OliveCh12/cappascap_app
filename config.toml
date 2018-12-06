@@ -2,7 +2,7 @@ baseURL = "http://example.org/"
 languageCode = "FR"
 title = "https://cappascap.pw"
 
-theme = "grapefruit"
+theme = "Grapefruit"
 
 # Landing Page
 [params]
