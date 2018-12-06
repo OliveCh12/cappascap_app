@@ -1,6 +1,6 @@
-baseURL = "http://example.org/"
+baseURL = "https://cappascap.pw"
 languageCode = "FR"
-title = "https://cappascap.pw"
+title = "Cap'Pascap"
 
 theme = "grapefruit"
 

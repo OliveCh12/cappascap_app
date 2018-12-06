@@ -21,11 +21,39 @@
         crossorigin="anonymous">
 
     <link rel="stylesheet" href="/css/main.css">
-    
+
     {{/* Sass ressources compliled to CSS */}}
     {{ $style := resources.Get "/sass/home.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
-    
+
     {{/* Favicon */}}
     <link rel="shortcut icon" type="image/x-icon" href="{{ "favicon.ico" | absURL }}" />
+
+    {{/* Open Graph Facebook*/}}
+
+    <meta property="og:url"                content="https://cappascap.pw" />
+    <meta property="og:type"               content="website" />
+    <meta property="og:title"              content="Cap' Pas cap' " />
+    <meta property="og:description"        content="Cap'Pas'Cap, la plateforme qui te fait matcher avec le travail adapté à ton handicap en 24h." />
+    <meta property="og:image"              content="https://res.cloudinary.com/dw06d9fmy/image/upload/v1544094685/47576503_512776709228377_1718516608126681088_n.png" />
+    <meta property="fb:app_id" content="266355604038865">
+    <meta property="og:locale:fr_FR">
+
+     {{/* Open Graph Twitter*/}}
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@CapPasCap_asso" />
+
+     {{/* Global site tag (gtag.js) - Google Analytics */}}
+
+   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130565598-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-130565598-1');
+    </script>
+
+
 </head>
