@@ -1,0 +1,57 @@
+<<<<<<< HEAD
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    {{/* Site Title */}}
+    <title>{{ .Site.Title }}</title>
+
+    {{/* Mobile Specific Meta */}}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{/* Additionals informations */}}
+    <meta name="description" content="Mint Website">
+    <meta name="author" content="Olivier Chemla">
+
+    {{/* Bootstrap Framework */}}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    {{/* Font Awesome */}}
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/css/main.css">
+    
+    {{/* Sass ressources compliled to CSS */}}
+    {{ $style := resources.Get "/sass/home.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    
+    {{/* Favicon */}}
+    <link rel="shortcut icon" type="image/x-icon" href="{{ "favicon.ico" | absURL }}" />
+</head>
+=======
+<html xmlns:og="http://ogp.me/ns#">
+<head>
+  <title>Cap' Pas Cap'</title>
+  <meta property="og:url"                content="https://cappascap.pw" />
+  <meta property="og:type"               content="website" />
+  <meta property="og:title"              content="Cap' Pas cap' " />
+  <meta property="og:description"        content="Cap'Pas'Cap, la plateforme qui te fait matcher avec le travail adapté à ton handicap en 24h." />
+  <meta property="og:image"              content="https://res.cloudinary.com/dw06d9fmy/image/upload/v1544094685/47576503_512776709228377_1718516608126681088_n.png" />
+  <meta property="fb:app_id" content="266355604038865">
+  <meta property="og:locale:fr_FR">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@CapPasCap_asso" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130565598-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-130565598-1');
+  </script>
+</head>
+</html>
+>>>>>>> addAnalytics

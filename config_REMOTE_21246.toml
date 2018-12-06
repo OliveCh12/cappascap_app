@@ -1,0 +1,4 @@
+baseURL = "https://cappascap.pw/"
+languageCode = "fr"
+title = "Cap'pas Cap'"
+theme = "grapefruit"
