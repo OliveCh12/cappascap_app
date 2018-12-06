@@ -1,0 +1,36 @@
+header {
+  .container {
+    display: flex !important;
+    justify-content: start;
+    align-items: center;
+    height:70px;
+  }
+  h3{
+    color: $primary;
+    font-size: 1em;
+    margin-left: 1em;
+  }
+}
+
+.logo {
+  animation: spin_7595 20s linear infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes spin_7595 {
+  0% {
+    transform: rotate(0deg)
+  }
+
+  100% {
+    transform: rotate(359deg)
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    .container{
+      justify-content: center;
+    }
+  }
+}

@@ -1,0 +1,152 @@
+{{ define "main" }}
+<header>
+    <div class="hero">
+        <div class="container">
+            {{ with .Site.Params.hero }}
+            <div class="hero__content">
+                <img class="hero__logo" src="img/logo-white.svg" alt="">
+                <p class="hero__text">
+                    <strong class="hero__quote">"</strong>
+                    {{ .description }}
+                    <strong class="hero__quote">"</strong>
+                </p>
+                <a class="hero__button btn btn-light btn-lg" href="">S'inscrire</a>
+                <a class="" href="">Déjà inscrit ? Se connecter.</a>
+                <a href="#section__feature"></a>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</header>
+
+<!-- Landing / Section 1 -->
+<section class="reveal-left">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="section__feature" id="section__feature">
+                    <img class="section__img" src="https://res.cloudinary.com/dw06d9fmy/image/upload/q_10/v1544088287/demo1.jpg" alt="">
+                    <div class="section__img--background"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                {{ with .Site.Params.section_01 }}
+                <div class="section__content">
+                    <div class="section__title">
+                        <strong>01</strong>
+                        <h3>{{ .title }}</h3>
+                    </div>
+                    <p class="section__text">
+                      {{ .description }}
+                    </p>
+                    <div class="section__footer">
+                        <!--<a class="section__button btn btn-primary" href="">Créer mon profil</a>-->
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Landing / Section 2 -->
+<section class="reveal-left">
+    <div class="container">
+        <div class="section__big">
+            
+            <div class="section__img--background"></div>
+            <div class="row">
+                <div class="col-md-6">
+                    {{ with .Site.Params.testimonials_01 }}
+                    <div class="section__content">
+                        <img src="https://res.cloudinary.com/dw06d9fmy/image/upload/q_10/v1544088287/portrait1.jpg" alt="">
+                        <p class="section__text">
+                            <strong>"</strong>
+                            {{ .description }}
+                            <strong>"</strong>
+                        </p>
+                    </div>
+                    {{ end }}
+                </div>
+
+                <div class="col-md-6">
+                        {{ with .Site.Params.testimonials_02 }}
+                        <div class="section__content">
+                            <img src="https://res.cloudinary.com/dw06d9fmy/image/upload/q_10/v1544088287/portrait2.jpg" alt="">
+                            <p class="section__text">
+                                <strong>"</strong>
+                                {{ .description }}
+                                <strong>"</strong>
+                            </p>
+                        </div>
+                        {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+    <hr>
+</div>
+
+<!-- Landing / Section 3 -->
+<section class="reveal-right">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                    {{ with .Site.Params.section_02 }}
+                <div class="section__content">
+                    <div class="section__title">
+                        <strong>02</strong>
+                        <h3>{{ .title }}</h3>
+                    </div>
+                    <p class="section__text">
+                        {{ .description }}
+                    </p>
+                    <div class="section__footer">
+                        <!--<a class="section__button btn btn-primary" href="">Recevoir des offre</a>-->
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+            <div class="col-md-6">
+                <div class="section__feature">
+                    <img class="section__img" src="https://res.cloudinary.com/dw06d9fmy/image/upload/q_10/v1544088287/demo2.jpg" alt="">
+                    <div class="section__img--background"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Landing / Section 4 -->
+<section class="reveal-left">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="section__feature">
+                    <img class="section__img" src="https://res.cloudinary.com/dw06d9fmy/image/upload/q_10/v1544088287/demo3.jpg" alt="">
+                    <div class="section__img--background"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                    {{ with .Site.Params.section_03 }}
+                    <div class="section__content">
+                        <div class="section__title">
+                            <strong>03</strong>
+                            <h3>{{ .title }}</h3>
+                        </div>
+                        <p class="section__text">
+                            {{ .description }}
+                        </p>
+                        <div class="section__footer">
+                            <!--<a class="section__button btn btn-primary" href="">Recevoir des offre</a>-->
+                        </div>
+                    </div>
+                    {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

@@ -1,0 +1,40 @@
+footer {
+    .container {
+        display: flex !important;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 10pt;
+        color: $primary;
+        min-height: 70px;
+    }
+}
+
+.nav-link {
+    color: $primary;
+    text-transform: capitalize;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: $primary;
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        .container {
+            flex-direction: column;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        .footer__links {
+            .nav {
+                padding: 10px;
+                flex-direction: column;
+                text-align: center
+            }
+        }
+
+    }
+}
