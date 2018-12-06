@@ -1,3 +1,36 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Cap'Pas'Cap"
+
+theme = "grapefruit"
+
+# Landing Page
+[params]
+[params.hero]
+enable  = true
+title = "inspired."
+description =  "Cap'Pas'Cap, la plateforme qui te fait matcher avec le travail adapté à ton handicap en 24h."
+
+# Sections
+[params.section_01]
+enable = true
+title = "Inscrivez-vous"
+description = "Créez votre profil et renseignez le maximum d'informations: le domaine qui vous intéresse, votre âge, votre lieu de résidence, votre handicap, et ses particularités, soit toute information qui nous permettra de cerner au mieux votre demande et de vous apporter une réponse adaptée."
+
+[params.section_02]
+enable = true
+title = "Une sélection sur mesure"
+description = " Notre équipe étudie votre candidature et vous aide à affiner votre recherche avec un coach personnel. Puis parmi nos recruteurs membres de Cap'Pas Cap, nous séléctionnons les offres les plus pertinentes et les plus cohérentes avec votre handicap et vous les proposons dans un délai de 24 heures après que vous ayez formulé votre demande."
+
+[params.section_03]
+enable = true
+title = "Passez votre entretien"
+description = " Nous rentrons de nouveau en contact avec vous pour vous guider vers le meilleur choix pour vous parmi les offres qui vous ont été proposées. Une fois votre entretien planifié, Votre coach personnel vous aide à vous préparer pour celui-ci. L'entretien se déroule par appel vidéo sur notre plateforme pour vous éviter de vous déplacer. Pratique non?"
+
+# Testimoniales
+[params.testimonials_01]
+description = "Aveugle depuis la naissance, j'ai découvert Cap'Pas Cap grâce à une amie. Resultats, en deux jours j'ai décroché un entretien et deux semaines j'ai été embauchée."
+
+[params.testimonials_02]
+description = "Aveugle depuis la naissance, j'ai découvert Cap'Pas Cap grâce à une amie. Resultats, en deux jours j'ai décroché un entretien et deux semaines j'ai été embauchée."
+
