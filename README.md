@@ -1,4 +1,4 @@
-![Cap'Pas'Cap](https://res.cloudinary.com/dw06d9fmy/image/upload/v1544088286/banner.jpg)
+![Cap'Pas'Cap](https://res.cloudinary.com/dw06d9fmy/image/upload/v1544189273/banner-cappascap.jpg)
 # Cap'Pas'Cap
 
 Cap'Pas'Cap est une plateforme de recrutement visant à accompagner et améliorer la recherche d'emploi des personnes handicapés.
