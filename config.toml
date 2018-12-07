@@ -2,7 +2,7 @@ baseURL = "https://grape-fruits.herokuapp.com/"
 languageCode = "FR"
 title = "Cap pas Cap"
 
-theme = "Grapefruit"
+theme = "cappascap_app"
 
 # Landing Page
 [params]
