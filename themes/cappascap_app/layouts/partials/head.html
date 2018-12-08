@@ -34,8 +34,8 @@
     <link rel="stylesheet" href="/css/main.css">
 
     {{/* Sass ressources compliled to CSS */}}
-    {{/*  {{ $style := resources.Get "/sass/home.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}">  */}}
+    {{ {{ $style := resources.Get "/sass/home.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">  }}
     <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/main.css">
 
     {{/* Favicon */}}
