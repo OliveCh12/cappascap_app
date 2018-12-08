@@ -49,47 +49,6 @@
     </div>
 </section>
 
-<!-- Landing / Section 2 -->
-<section class="reveal-left">
-    <div class="container">
-        <div class="section__big">
-
-            <div class="section__img--background"></div>
-            <div class="row">
-                <div class="col-md-6">
-                    {{ with .Site.Params.testimonials_01 }}
-                    <div class="section__content">
-                        <img src="https://res.cloudinary.com/dw06d9fmy/image/upload/q_10/v1544088287/portrait1.jpg" alt="">
-                        <p class="section__text">
-                            <strong>"</strong>
-                            {{ .description }}
-                            <strong>"</strong>
-                        </p>
-                    </div>
-                    {{ end }}
-                </div>
-
-                <div class="col-md-6">
-                        {{ with .Site.Params.testimonials_02 }}
-                        <div class="section__content">
-                            <img src="https://res.cloudinary.com/dw06d9fmy/image/upload/q_10/v1544088287/portrait2.jpg" alt="">
-                            <p class="section__text">
-                                <strong>"</strong>
-                                {{ .description }}
-                                <strong>"</strong>
-                            </p>
-                        </div>
-                        {{ end }}
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<div class="container">
-    <hr>
-</div>
-
 <!-- Landing / Section 3 -->
 <section class="reveal-right">
     <div class="container">
@@ -149,4 +108,41 @@
         </div>
     </div>
 </section>
+<!-- Landing / Section 5 -->
+<section class="reveal-left">
+    <div class="container">
+        <div class="section__big">
+
+            <div class="section__img--background"></div>
+            <div class="row">
+                <div class="col-md-6">
+                    {{ with .Site.Params.testimonials_01 }}
+                    <div class="section__content">
+                        <img src="https://res.cloudinary.com/dw06d9fmy/image/upload/q_10/v1544088287/portrait1.jpg" alt="">
+                        <p class="section__text">
+                            <strong>"</strong>
+                            {{ .description }}
+                            <strong>"</strong>
+                        </p>
+                    </div>
+                    {{ end }}
+                </div>
+
+                <div class="col-md-6">
+                        {{ with .Site.Params.testimonials_02 }}
+                        <div class="section__content">
+                            <img src="https://res.cloudinary.com/dw06d9fmy/image/upload/q_10/v1544088287/portrait2.jpg" alt="">
+                            <p class="section__text">
+                                <strong>"</strong>
+                                {{ .description }}
+                                <strong>"</strong>
+                            </p>
+                        </div>
+                        {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 {{ end }}
