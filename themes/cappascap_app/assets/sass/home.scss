@@ -10,13 +10,9 @@ body {
 }
 
 header {
-  background-image: linear-gradient(
-      0deg,
-      rgba(144, 47, 56, 0),
-      rgba(80, 80, 80, 0.66) 52%, #642828)
-    ),
-    url("https://res.cloudinary.com/dmnigpnke/image/upload/v1544275851/shridhar-gupta-678685-unsplash_edtrcp.jpg");
-  background-size: cover;
+ background-image: linear-gradient(to bottom, rgba(144, 47, 56, 0), rgba(80, 80, 80, 0.66) 52%, #642828);
+ background-image: ("https://res.cloudinary.com/dmnigpnke/image/upload/v1544275851/shridhar-gupta-678685-unsplash_edtrcp.jpg");
+background-size: cover;
 
   a {
     color: $white;
