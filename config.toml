@@ -2,6 +2,8 @@ baseURL = "http://www.cappascap.pw/"
 languageCode = "FR"
 title = "Cap pas Cap"
 
+
+
 theme = "cappascap_app"
 
 # Landing Page
@@ -34,3 +36,6 @@ description = "Aveugle depuis la naissance, j'ai découvert Cap'Pas Cap grâce �
 [params.testimonials_02]
 description = "Aveugle depuis la naissance, j'ai découvert Cap'Pas Cap grâce à une amie. Resultats, en deux jours j'ai décroché un entretien et deux semaines j'ai été embauchée."
 
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
