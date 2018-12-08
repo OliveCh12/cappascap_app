@@ -41,14 +41,12 @@
 
     {{/* Favicon */}}
     <link rel="shortcut icon" type="image/x-icon" href="{{ "favicon.ico" | absURL }}" />
-
     {{/* Global site tag (gtag.js) - Google Analytics */}}
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130565598-1"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'UA-130565598-1');
   </script>
 
@@ -61,11 +59,8 @@
       xfbml      : true,
       version    : '{api-version}'
     });
-
     FB.AppEvents.logPageView();
-
   };
-
   (function(d, s, id){
      var js, fjs = d.getElementsByTagName(s)[0];
      if (d.getElementById(id)) {return;}
@@ -82,5 +77,4 @@
 
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script>
 <!-- End Cookie Consent plugin -->
-
 </head>
